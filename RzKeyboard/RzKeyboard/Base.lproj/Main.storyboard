@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b6a-Pj-s47">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rz Keyboard-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggr-Ya-kYH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0UK-PF-lNF">
+                                        <rect key="frame" x="16" y="89" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tra-WT-iMB">
+                                        <rect key="frame" x="16" y="148" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bAe-25-Kff">
+                                        <rect key="frame" x="16" y="208" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iA7-Zw-tOq">
+                                        <rect key="frame" x="16" y="269" width="343" height="129"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GLg-30-vGQ">
+                                        <rect key="frame" x="16" y="432" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwY-90-2XW">
+                                        <rect key="frame" x="16" y="490" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.51827375856164382" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Tra-WT-iMB" firstAttribute="trailing" secondItem="bAe-25-Kff" secondAttribute="trailing" id="2lh-Ij-76G"/>
+                                    <constraint firstAttribute="trailing" secondItem="0UK-PF-lNF" secondAttribute="trailing" constant="16" id="8kO-dg-QTN"/>
+                                    <constraint firstItem="iA7-Zw-tOq" firstAttribute="top" secondItem="bAe-25-Kff" secondAttribute="bottom" constant="31" id="9Eo-kg-k8Y"/>
+                                    <constraint firstItem="bAe-25-Kff" firstAttribute="leading" secondItem="iA7-Zw-tOq" secondAttribute="leading" id="Am4-Xo-PPy"/>
+                                    <constraint firstItem="Tra-WT-iMB" firstAttribute="leading" secondItem="bAe-25-Kff" secondAttribute="leading" id="DGC-Up-GcV"/>
+                                    <constraint firstItem="Tra-WT-iMB" firstAttribute="top" secondItem="0UK-PF-lNF" secondAttribute="bottom" constant="29" id="FdN-6D-l93"/>
+                                    <constraint firstItem="0UK-PF-lNF" firstAttribute="leading" secondItem="Tra-WT-iMB" secondAttribute="leading" id="Hlf-hL-N3H"/>
+                                    <constraint firstItem="bAe-25-Kff" firstAttribute="top" secondItem="Tra-WT-iMB" secondAttribute="bottom" constant="30" id="Kk7-Uj-FYI"/>
+                                    <constraint firstItem="GLg-30-vGQ" firstAttribute="top" secondItem="iA7-Zw-tOq" secondAttribute="bottom" constant="34" id="Lyk-8m-mui"/>
+                                    <constraint firstItem="hwY-90-2XW" firstAttribute="top" secondItem="GLg-30-vGQ" secondAttribute="bottom" constant="28" id="Pwp-yz-Qwm"/>
+                                    <constraint firstItem="GLg-30-vGQ" firstAttribute="trailing" secondItem="hwY-90-2XW" secondAttribute="trailing" id="aSQ-qb-fFm"/>
+                                    <constraint firstItem="bAe-25-Kff" firstAttribute="trailing" secondItem="iA7-Zw-tOq" secondAttribute="trailing" id="bSr-Mb-4SF"/>
+                                    <constraint firstItem="iA7-Zw-tOq" firstAttribute="trailing" secondItem="GLg-30-vGQ" secondAttribute="trailing" id="hZe-Tq-FxK"/>
+                                    <constraint firstItem="iA7-Zw-tOq" firstAttribute="leading" secondItem="GLg-30-vGQ" secondAttribute="leading" id="itn-nk-N4a"/>
+                                    <constraint firstItem="0UK-PF-lNF" firstAttribute="leading" secondItem="ggr-Ya-kYH" secondAttribute="leading" constant="16" id="kE3-dV-hSL"/>
+                                    <constraint firstItem="0UK-PF-lNF" firstAttribute="trailing" secondItem="Tra-WT-iMB" secondAttribute="trailing" id="o5E-Tc-MbX"/>
+                                    <constraint firstItem="0UK-PF-lNF" firstAttribute="top" secondItem="ggr-Ya-kYH" secondAttribute="top" constant="89" id="oKP-Xj-OJr"/>
+                                    <constraint firstItem="iA7-Zw-tOq" firstAttribute="centerY" secondItem="ggr-Ya-kYH" secondAttribute="centerY" id="stY-Zq-CMY"/>
+                                    <constraint firstAttribute="bottom" secondItem="hwY-90-2XW" secondAttribute="bottom" constant="148" id="wVy-xh-Vzz"/>
+                                    <constraint firstItem="0UK-PF-lNF" firstAttribute="centerX" secondItem="ggr-Ya-kYH" secondAttribute="centerX" id="y0Z-tF-p7I"/>
+                                    <constraint firstItem="GLg-30-vGQ" firstAttribute="leading" secondItem="hwY-90-2XW" secondAttribute="leading" id="zIb-e2-02X"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="v7D-XQ-ybD"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ggr-Ya-kYH" secondAttribute="trailing" id="3qc-j0-GCi"/>
+                            <constraint firstItem="ggr-Ya-kYH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6LL-4P-uJx"/>
+                            <constraint firstItem="ggr-Ya-kYH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8XP-ES-F4W"/>
+                            <constraint firstItem="ggr-Ya-kYH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9BC-FX-2bF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rz Keyboard" id="PJi-qH-mAh"/>
+                    <connections>
+                        <outlet property="datePicker" destination="d79-IY-Ncy" id="7Ch-h0-xRi"/>
+                        <outlet property="pickerView" destination="ymb-c6-Too" id="FB4-Tb-jRg"/>
+                        <outlet property="scrollView" destination="ggr-Ya-kYH" id="7cI-6S-DBr"/>
+                        <outlet property="textField1" destination="0UK-PF-lNF" id="Wqj-il-tYz"/>
+                        <outlet property="textField2" destination="Tra-WT-iMB" id="1qb-RV-Am2"/>
+                        <outlet property="textField3" destination="bAe-25-Kff" id="cNy-do-2uZ"/>
+                        <outlet property="textFieldDatePicker" destination="GLg-30-vGQ" id="qJg-sa-zTJ"/>
+                        <outlet property="textFieldPickerView" destination="hwY-90-2XW" id="TAf-DZ-fMt"/>
+                        <outlet property="textView" destination="iA7-Zw-tOq" id="RGY-dT-qfj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="d79-IY-Ncy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <date key="date" timeIntervalSinceReferenceDate="536153925.23792201">
+                        <!--2017-12-28 11:38:45 +0000-->
+                    </date>
+                </datePicker>
+                <pickerView contentMode="scaleToFill" id="ymb-c6-Too">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="dataSource" destination="BYZ-38-t0r" id="7VV-wa-IFt"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="4dX-8l-iYl"/>
+                    </connections>
+                </pickerView>
+            </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0vW-Iy-6pr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b6a-Pj-s47" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZrS-6n-Kt7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Rev-EI-gJR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lww-GU-hl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="123"/>
+        </scene>
+    </scenes>
+</document>
